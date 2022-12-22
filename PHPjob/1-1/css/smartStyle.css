@@ -1,0 +1,114 @@
+@media screen and (max-width: 767px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container2{
+        display: flex;
+        flex-direction: row;
+    }
+    .container3{
+        display: flex;
+        flex-direction: column;
+    }
+    .container4{
+        display: flex;
+        flex-direction: row;
+    }
+    .container5{
+        display: flex;
+        flex-direction: column;
+    }
+    .box1 {
+        width: 300px;
+        height: 100px;
+        background-color: #141f40;
+    }
+    .box2 {
+        width: 100px;
+        height: 250px;
+        background-color: #80bfa8;
+    }
+    .box3 {
+        width: 125px;
+        height: 50px;
+        background-color: #dbd400;
+    }
+    .box4 {
+        width: 125px;
+        height: 100px;
+        background-color: #0093b7;
+    }
+    .box5 {
+        width: 75px;
+        height: 150px;
+        background-color: #ff9e6b;
+    }
+    .box6 {
+        width: 200px;
+        height: 100px;
+        background-color: #8c2727;
+    }
+    .box7 {
+        width: 300px;
+        height: 100px;
+        background-color: #d98d30;
+    }
+}
+@media screen and (max-width: 479px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+    }
+    .container3{
+        display: flex;
+        flex-direction: column;
+    }
+    .container4{
+        display: flex;
+        flex-direction: column;
+    }
+    .container5{
+        display: flex;
+        flex-direction: column;
+    }
+    .box1 {
+        width: 150px;
+        height: 100px;
+        background-color: #141f40;
+    }
+    .box2 {
+        width: 150px;
+        height: 250px;
+        background-color: #80bfa8;
+    }
+    .box3 {
+        width: 150px;
+        height: 50px;
+        background-color: #dbd400;
+    }
+    .box4 {
+        width: 150px;
+        height: 100px;
+        background-color: #0093b7;
+    }
+    .box5 {
+        width: 150px;
+        height: 150px;
+        background-color: #ff9e6b;
+    }
+    .box6 {
+        width: 150px;
+        height: 100px;
+        background-color: #8c2727;
+    }
+    .box7 {
+        width: 150px;
+        height: 100px;
+        background-color: #d98d30;
+    }
+}
