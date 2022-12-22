@@ -1,24 +1,22 @@
 <html>
 <?php
-for ($i = 1; $i < 100; $i++)
+$myArray = ["red" => "赤", "blue" => "青", "green" => "緑"];
+var_dump($myArray);
+echo "<br>";
+$myArray["yellow"] = "黄色";
+var_dump($myArray);
+echo "<br>";
+
+$fruits = ["apple" =>"りんご", "orange" => "みかん", "peach" => "もも"];
+foreach ($fruits as $key => $value)
 {
-    if($i % 3 == 0 && $i % 5 == 0)
-    {
-        echo "FizzBuzz!!";
-    }
-    elseif($i % 3 == 0)
-    {
-        echo "Fizz!";
-    }
-    elseif($i % 5 == 0)
-    {
-        echo "Buzz!";
-    }
-    else
-    {
-        echo $i;
-    }
-    echo"<br>";
+    echo "$key と言ったら $value<br>";
 }
+
+function getBoxVolume($height, $width, $length)
+{
+    return $height * $width * $length;
+}
+echo getBoxVolume(5, 10, 8);
 ?>
 </html>
