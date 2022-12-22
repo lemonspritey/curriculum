@@ -1,0 +1,39 @@
+html
+{
+    background-color: #808080
+}
+
+hr
+{
+    height: 5px;
+    background: white;
+}
+
+h1
+{
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
+
+h2
+{
+    color:white
+}
+
+form
+{
+    margin-top: 50px;
+    text-align: center;
+}
+
+p
+{
+    color:white;
+    text-align: center;
+}
+
+span
+{
+    color:white;
+}
