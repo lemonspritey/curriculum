@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        th, td {
+            padding : 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <select onchange="changeLang()">
+        <option id="select">選択してください</option>
+        <option id="selected_jpn">日本語</option>
+        <option id="selected_en">English</option>
+        <option id="selected_all">全て表示</option>
+    </select>
+    <table>
+        <tr>
+            <th>日本</th>
+            <td>こんにちは</td>
+            <td>ありがとう</td>
+            <td>さようなら</td>
+        </tr>
+        <tr>
+            <th>English</th>
+            <td>Hello</td>
+            <td>Thank you</td>
+            <td>Good Bye</td>
+        </tr>
+    </table>
+
+    <script>
+        function changeLang()
+        {
+            let dropDown = document.getElementsByTagName("select")[0];
+            let selectedID = dropDown.options[dropDown.selectedIndex].id;
+            let trJPN = document.getElementsByTagName("tr")[0];
+            let trEN = document.getElementsByTagName("tr")[1];
+            trJPN.style.display = "none";
+            trEN.style.display = "none";
+            switch(selectedID)
+            {
+
+                case  "selected_jpn":
+                    trJPN.style.display = "block";
+                    break;
+                case  "selected_en":
+                    trEN.style.display = "block";
+                    break;
+                case "select":
+                case "selected_all":
+                    trJPN.style.display = "block";
+                    trEN.style.display = "block";
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
