@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.headerMain {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+body {
+  padding: 50px;
+}
+a {
+  display: block;
+  width: 200px;
+  background-color: rgb(52, 162, 184);
+  color: white;
+  margin: auto 0;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+input[type="submit"] {
+  width: 200px;
+  background-color: rgb(45, 123, 255);
+  color: white;
+  padding: 10px 0;
+  border: none;
+  border-radius: 4px;
+}
+select {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+td,
+th {
+  border: 1px solid gray;
+  text-align: center;
+  padding: 10px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+th {
+  background-color: rgb(229, 233, 238);
+}
+#back {
+  margin: 10px 0;
+}
+#registerBook {
+  width: 100px;
+  background-color: rgb(45, 123, 255);
+}
+#mainLogout {
+  width: 125px;
+  background-color: rgb(107, 116, 122);
+}
+#delete {
+  height: 30px;
+  width: 50px;
+  background-color: rgb(220, 51, 64);
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+#stock {
+  display: flex;
+}
