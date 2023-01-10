@@ -1,12 +1,12 @@
 <?php
 require_once('db_connect.php');
-if (isset($_POST["signUp"]) && !empty($_POST["name"]) && !empty($_POST["password"])) {
+if (isset($_POST["signUp"]) && !empty($_POST["name"]) && !empty($_POST["pass"])) {
     $sql = "INSERT INTO users (name, password) VALUES (:name, :password)";
     $pdo = db_connect();
     try {
         $stmt = $pdo->prepare($sql);
         $stmt->bindValue(':name',  $_POST["name"]);
-        $password = $_POST["password"];
+        $password = $_POST["pass"];
         $password_hash = password_hash($password, PASSWORD_DEFAULT);
         $stmt->bindValue(':password', $password_hash);
         $stmt->execute();

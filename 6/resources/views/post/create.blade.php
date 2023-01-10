@@ -8,7 +8,7 @@
 {{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
 @section('content')
 <div class="container">
-    <div class="row">
+    <div class="column">
         <div class="col-md-8 mx-auto">
             <form action="{{ action('PostController@create') }}" method="post" enctype="multipart/form-data">
 
@@ -20,8 +20,7 @@
                 </ul>
                 @endif
                 <div class="form-group row">
-                    <label class="col-md-2" for="title">つぶやき</label>
-                    <div class="col-md-10"></div>
+                    <label class="card col mx-auto" for="title">ホーム</label>
                     <input type="text" class="form-control" name="body" placeholder="いまどうしてる？" value="{{ old('body') }}">
                 </div>
                 <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
@@ -29,9 +28,9 @@
                 <input type="submit" value="つぶやく" class="btn btn-primary">
         </div>
         </form>
-        <div class="card mb-2">
+        <div class="postContainer">
             @foreach($posts as $post)
-            <div class="flex card mb-2 justify-between">
+            <div class="flex card justify-between">
                 @foreach($users as $user)
                 @if($user->id == $post->user_id)
                 <div class="flex flex-row justify-between w-full py-3">
